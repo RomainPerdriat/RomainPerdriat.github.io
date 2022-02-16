@@ -6,7 +6,7 @@ import './expeTech.scss';
 const ExpeTech = ({className, ...rest}) => {
    return (
        <div
-            className={classnames('expetech', className)}
+            className={classnames('expeTech', className)}
             {...rest}
          >
             Expérience et technos

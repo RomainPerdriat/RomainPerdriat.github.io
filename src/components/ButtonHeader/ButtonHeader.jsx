@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import './buttonheader.scss';
+import './buttonHeader.scss';
 
 const ButtonHeader = ({className, ...rest}) => {
    return (

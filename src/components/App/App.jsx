@@ -15,7 +15,6 @@ function App() {
       Coming soon
       <Header/>
       <Pres/>
-      <BoutonDm/>
       <ExpeTech/>
       <VPComp/>
       <Formations/>

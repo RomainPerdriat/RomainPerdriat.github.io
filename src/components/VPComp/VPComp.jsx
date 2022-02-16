@@ -6,7 +6,7 @@ import './vPComp.scss';
 const VPComp = ({className, ...rest}) => {
    return (
        <div
-            className={classnames('vpcomp', className)}
+            className={classnames('vPComp', className)}
             {...rest}
          >
             Vies Pro et compétences 
