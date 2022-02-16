@@ -1,11 +1,27 @@
+
+
+
+
+
+.app {
+  animation: pop .5s;
+  padding-left: 2.5rem;
+  
+  @media (max-width: 2.5rem) {
+    padding-left: 2.5rem;
+  }
+}
+
+
+
+
 .App {
   text-align: center;
-  border: solid black;
-  height: 100%;
-  width:100vh;
-  background-color: cadetblue;
-  margin:2rem;
-  padding: 2rem;
+  height: 100vh;
+  width:auto;
+  background-image:url("../../../public/fpcv.jpeg");
+
+  padding: .5rem;
 }
 
 

@@ -1,4 +1,18 @@
+@use '../../styles/vars';
+
 .expeTech{
-    border: solid black;
-    background-color: chocolate;
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: vars.$gutter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    
+  &-p{
+    color:rgb(226, 214, 214);
+  }
+
 }

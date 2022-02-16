@@ -1,4 +1,11 @@
 .formations{
-    border: solid black;
-    background-color: blanchedalmond;
+    background-color: rgba(243, 234, 229,0.8);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto;
+    margin-top: 1rem;
 }

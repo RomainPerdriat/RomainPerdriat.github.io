@@ -1,4 +1,14 @@
 .header{
-    border: solid black;
-    background-color: cornflowerblue;
+    
+    background-color: rgba(0,0,0,.4); 
+    text-align: center;
+    padding: 2.5rem;
+    box-shadow: 0 20px 20px -30px rgba(0,0,0,.4); 
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+
+   
+
 }

@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import './header.scss';
 import ButtonHeader from '../ButtonHeader/ButtonHeader';
 import ButtonDm from '../BoutonDm/BoutonDm';
+import { Box } from '@mui/material';
 
 
 const Header = ({className, ...rest}) => {
@@ -12,13 +13,16 @@ const Header = ({className, ...rest}) => {
             className={classnames('header', className)}
             {...rest}
          >
-            <ButtonDm/>
-            HEADER
-            <ButtonHeader>Expérience</ButtonHeader>
-            <ButtonHeader>Expérience</ButtonHeader>
-            <ButtonHeader>Expérience</ButtonHeader>
-            <ButtonHeader>Expérience</ButtonHeader>
-            <ButtonHeader>Expérience</ButtonHeader>
+        <Box sx={{ boxShadow: 7 }}>
+            <ButtonDm className = "header-button" >Darkmode</ButtonDm>
+        </Box>
+        <Box sx={{ boxShadow: 7 }}><ButtonHeader/></Box>
+        <Box sx={{ boxShadow: 7 }}><ButtonHeader/></Box>
+        <Box sx={{ boxShadow: 7 }}><ButtonHeader/></Box>
+        <Box sx={{ boxShadow: 7 }}><ButtonHeader/></Box>
+           
+            
+           
             
         </div>
    );

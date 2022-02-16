@@ -2,15 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './buttonHeader.scss';
+import { Button } from '@mui/material';
 
 const ButtonHeader = ({className, ...rest}) => {
    return (
-       <button
-            className={classnames('buttonheader', className)}
-            {...rest}
-         >
-            
-        </button>
+    <Button variant="contained" color="success"> ButtonContent
+    </Button>
+
+  
    );
 };
 

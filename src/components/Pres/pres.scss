@@ -1,4 +1,18 @@
+@use '../../styles/vars';
 .pres{
-    border: solid black;
-    background-color: rgb(98, 120, 161);
+    
+    background-color: rgba(243, 234, 229,0.8);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    
+  &-p{
+    color:rgb(0, 0, 0);
+  }
+
 }
