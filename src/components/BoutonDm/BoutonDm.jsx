@@ -7,22 +7,27 @@ import ButtonHeader from '../ButtonHeader/ButtonHeader';
 
 
 
-const Bouton_DM = ({className, ...rest}) => {
+const Bouton_DM = ({
+    className,
+    handleButtonClick,
+     ...rest}) => {
 
     const [isClick, setIsClick] = useState(false);
     console.log('Etat du bouton', isClick);
+    
 
     const handleClick = () => {
         console.log(`On a cliqué sur le bouton`)
         setIsClick(!isClick)
+        handleButtonClick(isClick)
     }
    return (
         <Button 
             variant="contained" 
             color="success"
-            onClick= {handleClick}
+            onClick= {handleClick}            
             >
-            {(!isClick ? 'BeachMode' : 'ForestMode') }
+            {(!isClick ? 'ForestMode' : 'BeachMode') }
               
        </Button>     
    );

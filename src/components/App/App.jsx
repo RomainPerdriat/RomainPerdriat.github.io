@@ -9,12 +9,22 @@ import './app.scss';
 import { Routes, Route} from 'react-router-dom';
 import datas from '../../Datas/datasBouton';
 import Contact from '../Contact/Contact';
+import {useState} from 'react'
 function App() {
+  const [state,setState] = useState(true)
+  console.log('state debuit le app',state)
+  const handleButtonClick = (state) => {
+    console.log(`Hello from APP`)
+    setState(!state)
+    
+  }
   return (
     <div className="App">
-      <Header buttons = {datas}/>
+      <Header buttons = {datas}
+        handleButtonClick={handleButtonClick}
+      />
         <Routes>
-          <Route path ="/" element ={<Pres/>}/>
+          <Route path ="/" element ={<Pres state= {state}/>}/>
           <Route path ="/ExpeTech" element ={<ExpeTech/>}/>
           <Route path ="/VPComp" element ={<VPComp/>}/>
           <Route path ="/Formations" element ={<Formations/>}/>        

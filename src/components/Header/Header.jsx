@@ -12,6 +12,7 @@ const Header = ({
     className,
     buttons,
     to,
+    handleButtonClick,
      ...rest
     }) => {
         
@@ -22,7 +23,7 @@ const Header = ({
             {...rest}
          >
         <Box sx={{ boxShadow: 7 }}>
-            <ButtonDm className = "header-button" >Darkmode</ButtonDm>
+            <ButtonDm className = "header-button" handleButtonClick = {handleButtonClick} >Darkmode</ButtonDm>
         </Box>
         {titleAndWayButtons.map((button) => (
             <NavLink

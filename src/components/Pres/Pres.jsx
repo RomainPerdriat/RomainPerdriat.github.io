@@ -6,17 +6,25 @@ import { Avatar } from '@mui/material';
 import Contact from '../Contact/Contact';
 
 
-const Pres = ({className, ...rest}) => {
+const Pres = ({className,
+    state,
+     ...rest}) => {
    return (
        
        <div
             className={classnames('pres', className)}
             {...rest}
-         >        <h1>Présentation</h1>    
-            <Avatar 
-                alt="ma photo de profil"
-                src="profil_cv.jpg"
-                sx={{ width: 200, height: 200 }} />
+         >        <h1>Présentation</h1>
+          {(state ? <Avatar 
+                        alt="ma photo de profil"
+                        src="profil_cv.jpg"
+                        sx={{ width: 200, height: 200 }} />
+                : <Avatar 
+                alt="ma 2nde photo de profil"
+                src="profilplage.jpeg"
+                sx={{ width: 200, height: 200 }} />) }
+ 
+            
             <p className = "pres-p">
                 Bonjour!
                 Je suis actuellement en formation Développeur FullStack chez O'clock.
