@@ -28,7 +28,7 @@ const Header = ({
         </Box>
         {titleAndWayButtons.map((button) => (
             <NavLink
-                key={button.id}
+                key={button.id} 
                 to={button.to}>
                 <ButtonHeader name = {button.title}/>
             </NavLink>

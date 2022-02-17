@@ -25,7 +25,7 @@ function App() {
         <Route path ="/Loisirs" element ={<Loisirs/>}/>        
         <Route path = "*" element ={<Error404/>}/>
       </Routes>
-       <Contact/>
+       
 
     </div>
   );

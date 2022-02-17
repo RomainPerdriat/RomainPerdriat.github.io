@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './formations.scss';
+import Contact from '../Contact/Contact';
 
 const Formations = ({className, ...rest}) => {
    return (
+       <div>
        <div
             className={classnames('formations', className)}
             {...rest}
@@ -15,6 +17,10 @@ const Formations = ({className, ...rest}) => {
 
 </p>
         </div>
+        <div>
+           <Contact/>
+       </div>
+       </div>
    );
 };
 

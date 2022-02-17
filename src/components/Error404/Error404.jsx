@@ -2,14 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './error404.scss';
+import Contact from '../Contact/Contact';
 
 const Error404 = ({className, ...rest}) => {
    return (
-       <div
-            className={classnames('error404', className)}
-            {...rest}
-         >
-            
+       <div>
+            <div
+                className={classnames('error404', className)}
+                {...rest}
+                >            
+            </div>
+           
         </div>
    );
 };
