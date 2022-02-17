@@ -1,6 +1,3 @@
-
-import BoutonDm from '../BoutonDm/BoutonDm';
-import Contact from '../Contact/Contact';
 import ExpeTech from '../ExpeTech/ExpeTech';
 import Formations from '../Formations/Formations';
 import Header from '../Header/Header';
@@ -10,10 +7,9 @@ import VPComp from '../VPComp/VPComp';
 import Error404 from '../Error404/Error404';
 import './app.scss';
 import { Routes, Route} from 'react-router-dom';
-import datas from '../../Datas'
+import datas from '../../Datas/datasBouton';
 
 function App() {
-  console.log(`Données depuis le APP`, datas)
   return (
     <div className="App">
       <Header buttons = {datas}/>
@@ -24,9 +20,7 @@ function App() {
         <Route path ="/Formations" element ={<Formations/>}/>        
         <Route path ="/Loisirs" element ={<Loisirs/>}/>        
         <Route path = "*" element ={<Error404/>}/>
-      </Routes>
-       
-
+      </Routes>      
     </div>
   );
 }

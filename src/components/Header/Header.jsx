@@ -15,9 +15,7 @@ const Header = ({
      ...rest
     }) => {
         
-        const titleAndWayButtons = buttons.articles
-        console.log(`YOUHOU`,titleAndWayButtons)
-    
+        const titleAndWayButtons = buttons.articles    
    return (
        <nav
             className={classnames('header', className)}

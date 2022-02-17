@@ -11,8 +11,7 @@ const Error404 = ({className, ...rest}) => {
                 className={classnames('error404', className)}
                 {...rest}
                 >            
-            </div>
-           
+            </div>           
         </div>
    );
 };
