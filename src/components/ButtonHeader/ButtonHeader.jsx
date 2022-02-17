@@ -14,7 +14,7 @@ const ButtonHeader = ({
    return (
     <Button 
         variant="contained" color="success"> {name}
-        <NavLink to = {to}/>
+        
     </Button>  
    );
 };

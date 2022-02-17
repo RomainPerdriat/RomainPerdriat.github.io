@@ -17,7 +17,6 @@ const Header = ({
         
         const titleAndWayButtons = buttons.articles
         console.log(`YOUHOU`,titleAndWayButtons)
-        console.log(`YOUHOU`,buttons)
     
    return (
        <nav
@@ -28,11 +27,12 @@ const Header = ({
             <ButtonDm className = "header-button" >Darkmode</ButtonDm>
         </Box>
         {titleAndWayButtons.map((button) => (
-            <ButtonHeader
-              key={button.id}
-              name={button.title}
-              to={button.to}
-              />))
+            <NavLink
+                key={button.id}
+                to={button.to}>
+                <ButtonHeader name = {button.title}/>
+            </NavLink>
+              ))
             }  
         </nav>
    );
