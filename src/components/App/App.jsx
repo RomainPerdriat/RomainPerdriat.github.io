@@ -17,9 +17,9 @@ function App() {
       <Header/>
       <Routes>
         <Route path ="/" element ={<Pres/>}/>
-        <Route path ="/VPComp" element ={<VPComp/>}/>
         <Route path ="/Formations" element ={<Formations/>}/>
         <Route path ="/Loisirs" element ={<Loisirs/>}/>
+        <Route path ="/VPComp" element ={<VPComp/>}/>
         <Route path = "*" element ={<Error404/>}/>
       </Routes>
        <Contact/>

@@ -5,7 +5,7 @@ import './contact.scss';
 
 const Contact = ({className, ...rest}) => {
    return (
-       <div
+       <footer
             className={classnames('contact', className)}
             {...rest}
          >
@@ -18,7 +18,7 @@ const Contact = ({className, ...rest}) => {
 
 ots in a piece of 
 </p>
-</div>
+</footer>
    );
 };
 

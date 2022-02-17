@@ -7,9 +7,10 @@ import ButtonHeader from '../ButtonHeader/ButtonHeader';
 
 const Bouton_DM = ({className, ...rest}) => {
    return (
-       <Button variant="contained" color="success">
-             DarkMode
+        <Button variant="contained" color="success">
+              DarkMode
        </Button>
+       
             
        
    );
