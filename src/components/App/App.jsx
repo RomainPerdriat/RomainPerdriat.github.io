@@ -9,12 +9,14 @@ import Pres from '../Pres/Pres';
 import VPComp from '../VPComp/VPComp';
 import Error404 from '../Error404/Error404';
 import './app.scss';
-import { Routes, Route} from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom';
+import datas from '../../Datas'
 
 function App() {
+  console.log(`Données depuis le APP`, datas)
   return (
     <div className="App">
-      <Header/>
+      <Header buttons = {datas}/>
       <Routes>
         <Route path ="/" element ={<Pres/>}/>
         <Route path ="/Formations" element ={<Formations/>}/>

@@ -4,17 +4,21 @@ import classnames from 'classnames';
 import './buttonHeader.scss';
 import { Button } from '@mui/material';
 
-const ButtonHeader = ({className, ...rest}) => {
+const ButtonHeader = ({
+    className,
+    name,
+    ...rest   
+    }) => {
    return (
-    <Button variant="contained" color="success"> ButtonContent
-    </Button>
-
-  
+    <Button 
+        variant="contained" color="success"> {name}
+    </Button>  
    );
 };
 
 ButtonHeader.propTypes = {
     className: PropTypes.string,
+    name : PropTypes.string.isRequired
 };
 ButtonHeader.defaultProps = {
     className: '',

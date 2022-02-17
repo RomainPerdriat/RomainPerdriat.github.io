@@ -8,7 +8,15 @@ import { Box } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 
 
-const Header = ({className, ...rest}) => {
+const Header = ({
+    className,
+    buttons,
+     ...rest
+    }) => {
+        
+        const titleButtons = buttons.articles
+        console.log(titleButtons)
+    
    return (
        <nav
             className={classnames('header', className)}
@@ -17,11 +25,12 @@ const Header = ({className, ...rest}) => {
         <Box sx={{ boxShadow: 7 }}>
             <ButtonDm className = "header-button" >Darkmode</ButtonDm>
         </Box>
-        <NavLink to= "/"><Box sx={{ boxShadow: 7 }}><ButtonHeader/></Box></NavLink>
-        <NavLink to= "/Formations"><Box sx={{ boxShadow: 7 }}><ButtonHeader/></Box></NavLink>
-        <NavLink to= "/Loisirs"><Box sx={{ boxShadow: 7 }}><ButtonHeader/></Box></NavLink>
-        <NavLink to= "/VPComp"><Box sx={{ boxShadow: 7 }}><ButtonHeader/></Box></NavLink>
-        
+        {titleButtons.map((button) => (
+            <ButtonHeader
+              key={button.id}
+              name={button.title}
+              />))
+              }
        
            
             
@@ -33,6 +42,10 @@ const Header = ({className, ...rest}) => {
 
 Header.propTypes = {
     className: PropTypes.string,
+    buttons : PropTypes.arrayOf(PropTypes.shape({
+        id:PropTypes.number.isRequired,
+        title: PropTypes.string.isRequired,
+    }))
 };
 Header.defaultProps = {
     className: '',
