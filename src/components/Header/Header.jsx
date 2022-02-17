@@ -11,11 +11,13 @@ import { NavLink } from 'react-router-dom';
 const Header = ({
     className,
     buttons,
+    to,
      ...rest
     }) => {
         
-        const titleButtons = buttons.articles
-        console.log(titleButtons)
+        const titleAndWayButtons = buttons.articles
+        console.log(`YOUHOU`,titleAndWayButtons)
+        console.log(`YOUHOU`,buttons)
     
    return (
        <nav
@@ -25,17 +27,13 @@ const Header = ({
         <Box sx={{ boxShadow: 7 }}>
             <ButtonDm className = "header-button" >Darkmode</ButtonDm>
         </Box>
-        {titleButtons.map((button) => (
+        {titleAndWayButtons.map((button) => (
             <ButtonHeader
               key={button.id}
               name={button.title}
+              to={button.to}
               />))
-              }
-       
-           
-            
-           
-            
+            }  
         </nav>
    );
 };
