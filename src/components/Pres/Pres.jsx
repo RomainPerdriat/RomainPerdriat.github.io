@@ -16,13 +16,14 @@ const Pres = ({className,
             {...rest}
          >        <h1>Présentation</h1>
           {(state ? <Avatar 
-                        alt="ma photo de profil"
-                        src="profil_cv.jpg"
+                        alt="ma 2nde photo de profil"
+                        src="profilplage.jpeg"                        
                         sx={{ width: 200, height: 200 }} />
                 : <Avatar 
-                alt="ma 2nde photo de profil"
-                src="profilplage.jpeg"
+                alt="ma photo de profil"
+                src="profil_cv.jpg"
                 sx={{ width: 200, height: 200 }} />) }
+                
  
             
             <p className = "pres-p">

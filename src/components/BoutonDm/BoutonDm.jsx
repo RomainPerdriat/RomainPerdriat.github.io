@@ -27,7 +27,7 @@ const Bouton_DM = ({
             color="success"
             onClick= {handleClick}            
             >
-            {(!isClick ? 'ForestMode' : 'BeachMode') }
+            {(!isClick ? 'BeachMode' : 'ForestMode') }
               
        </Button>     
    );
