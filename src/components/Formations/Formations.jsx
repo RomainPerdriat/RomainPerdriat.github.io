@@ -17,9 +17,7 @@ const Formations = ({className, ...rest}) => {
 
 </p>
         </div>
-        <div>
-           <Contact/>
-       </div>
+        
        </div>
    );
 };

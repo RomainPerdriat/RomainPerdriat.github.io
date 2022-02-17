@@ -7,27 +7,26 @@ import Card from '../Card/Card';
 
 const Contact = ({className, ...rest}) => {
     const cards= datas.cards;
-    console.log(cards)
+    console.log(`Ensemble des cartes`,cards)
    return (
-       <footer
-            className={classnames('contact', className)}
-            {...rest}
-         >
-            <h1>Contact</h1>
-            {
-            cards.map((card) => (
-                <Card
-                key = {card.id}
-                url = {card.url}
-                title = {card.title}
-                content= {card.content}
-
-                />
-            ))
-
-            }
-             
-</footer>
+       
+        <footer
+                className={classnames('contact', className)}
+                {...rest}
+            >
+                <h1>Contact</h1>
+                {
+                    cards.map((card) => (
+                        <Card
+                        key = {card.id}
+                        src = {card.src}
+                        title = {card.title}
+                        content= {card.content}
+                        />
+                    ))
+                }          
+            </footer>
+       
    );
 };
 

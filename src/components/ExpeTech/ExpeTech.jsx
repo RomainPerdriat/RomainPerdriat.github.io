@@ -16,7 +16,7 @@ const ExpeTech = ({className, ...rest}) => {
 
             
         </div>
-        <div><Contact/></div>
+       
         </div>
    );
 };
