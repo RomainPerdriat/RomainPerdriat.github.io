@@ -15,15 +15,15 @@ const Header = ({
     handleButtonClick,
      ...rest
     }) => {
+        const titleAndWayButtons = buttons.articles  
         
-        const titleAndWayButtons = buttons.articles    
    return (
-       <nav
-            className={classnames('header', className)}
+    <nav
+              className={classnames('header', className)}
             {...rest}
          >
         <Box sx={{ boxShadow: 7 }}>
-            <ButtonDm className = "header-button" handleButtonClick = {handleButtonClick} >Darkmode</ButtonDm>
+            <ButtonDm  handleButtonClick = {handleButtonClick} >Darkmode</ButtonDm>
         </Box>
         {titleAndWayButtons.map((button) => (
             <NavLink
@@ -34,6 +34,8 @@ const Header = ({
               ))
             }  
         </nav>
+  
+
    );
 };
 

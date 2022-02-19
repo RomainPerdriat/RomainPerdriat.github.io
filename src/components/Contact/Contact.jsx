@@ -7,7 +7,6 @@ import Card from '../Card/Card';
 
 const Contact = ({className, ...rest}) => {
     const cards= datas.cards;
-    console.log(`Ensemble des cartes`,cards)
    return (
        
         <footer

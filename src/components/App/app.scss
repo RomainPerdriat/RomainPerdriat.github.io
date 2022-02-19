@@ -1,25 +1,18 @@
 
-
-
-
-
-.app {
-  animation: pop .5s;
-  padding-left: 2.5rem;
-  
-  @media (max-width: 2.5rem) {
-    padding-left: 2.5rem;
-  }
-}
-
-
-
-
 .App {
   text-align: center;
   height: 100vh;
   width:auto;
   background-image:url("../../../public/fpcv.jpeg");
+  padding: .5rem;
+}
+
+.App2 {
+  text-align: center;
+  height: 100vh;
+  width:auto;
+  background-image:url("../../../public/thaï.jpg");
+  background-size: cover;  
   padding: .5rem;
 }
 

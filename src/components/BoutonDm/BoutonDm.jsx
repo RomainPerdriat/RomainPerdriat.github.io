@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import './boutonDm.scss';
 import { Button } from '@mui/material';
-import ButtonHeader from '../ButtonHeader/ButtonHeader';
+import ParkIcon from '@mui/icons-material/Park';
+import BeachAccessIcon from '@mui/icons-material/BeachAccess';
+import { grey } from '@mui/material/colors';
+
+
+
+
+
+
 
 
 
@@ -12,24 +19,27 @@ const Bouton_DM = ({
     handleButtonClick,
      ...rest}) => {
 
-    const [isClick, setIsClick] = useState(false);
-    console.log('Etat du bouton', isClick);
-    
+          
+
+        
+
+    const [isClick, setIsClick] = useState(false);   
 
     const handleClick = () => {
-        console.log(`On a cliqué sur le bouton`)
         setIsClick(!isClick)
         handleButtonClick(isClick)
     }
-   return (
-        <Button 
-            variant="contained" 
-            color="success"
-            onClick= {handleClick}            
-            >
-            {(!isClick ? 'BeachMode' : 'ForestMode') }
-              
-       </Button>     
+   return ((!isClick ?
+    <Button      
+        onClick= {handleClick}           
+        > <BeachAccessIcon className ='beach' sx={{ color: grey[900] }}/>
+   </Button>  
+   :
+   <Button 
+        onClick= {handleClick}             
+        > <ParkIcon className ='forest' sx={{ color: grey[900] }} />
+   </Button>  
+)    
    );
 };
 
