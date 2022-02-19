@@ -1,11 +1,8 @@
-.error404{
-    background-image:url("../../../public/error404.jpg");   
+.error404{     
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    margin-top: 1rem;
+    text-align: center;
+    margin-top:4em;
+    height: 50rem;   
+    padding: .5rem;
+  
 }

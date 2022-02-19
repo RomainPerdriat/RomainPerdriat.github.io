@@ -1,7 +1,7 @@
 @use '../../styles/vars';
 
-.expeTech{
-    
+
+.experiences{
     background-color: rgba(243, 234, 229,0.8);
     padding-top: vars.$gutter;
     padding-bottom: vars.$gutter;
@@ -10,11 +10,5 @@
     align-items: center;
     max-width: 30%;
     margin: auto;
-    margin-top: 7rem;
-   
-    
-  &-p{
-    color:rgb(226, 214, 214);
-  }
-
+    margin-top: 2rem;
 }

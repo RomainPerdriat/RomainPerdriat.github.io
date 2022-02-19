@@ -2,22 +2,38 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './expeTech.scss';
-import Contact from '../Contact/Contact';
+import TechCard from '../TechCard/TechCard';
+import datasTech from '../../Datas/dataTechnos';
+import Formations from '../Formations/Formations';
+import Experiences from '../Experiences/Experiences';
 
-const ExpeTech = ({className, ...rest}) => {
+const ExpeTech = ({
+    className,
+     ...rest
+    }) => {
+        const techs= datasTech.technos;
+        console.log(techs)
    return (
-       <div><div
-            className={classnames('expeTech', className)}
-            {...rest}
-         >
-            <h1>Experience et technos</h1>
-
-            ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-            
+       <div>
+            <div
+                className={classnames('expeTech', className)}
+                {...rest}
+            >
+                <h1> Technologies </h1>
+                {
+                    techs.map((tech) => (
+                        <TechCard
+                        key = {tech.id}
+                        title = {tech.title}
+                        icons = {tech.icons}
+                        />
+                    ))
+                } 
+            </div>   
+                <Experiences/>
+                <Formations/>
         </div>
-       
-        </div>
+
    );
 };
 

@@ -1,31 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import './card.scss';
+import './formationsCard.scss';
 
-const Card = ({
+const FormationsCard = ({
     className,
-    key,
-    src,
     title,
     content,
      ...rest}) => {
    return (
        <div
-            className={classnames('card', className)}
+            className={classnames('formationscard', className)}
             {...rest}
          >
-         <p>{title}</p>
-         <p>{src}</p>         
-         <p>{content}</p>            
+            <p>{title}{content}</p>
         </div>
    );
 };
 
-Card.propTypes = {
+FormationsCard.propTypes = {
     className: PropTypes.string,
 };
-Card.defaultProps = {
+FormationsCard.defaultProps = {
     className: '',
 };
-export default React.memo(Card);
+export default React.memo(FormationsCard);

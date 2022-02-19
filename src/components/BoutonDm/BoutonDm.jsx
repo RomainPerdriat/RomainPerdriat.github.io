@@ -1,28 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './boutonDm.scss';
-import { Button } from '@mui/material';
-import ParkIcon from '@mui/icons-material/Park';
-import BeachAccessIcon from '@mui/icons-material/BeachAccess';
-import { grey } from '@mui/material/colors';
-
-
-
-
-
-
-
-
 
 const Bouton_DM = ({
     className,
     handleButtonClick,
-     ...rest}) => {
-
-          
-
-        
-
+     ...rest}) => {   
+              
     const [isClick, setIsClick] = useState(false);   
 
     const handleClick = () => {
@@ -30,15 +14,16 @@ const Bouton_DM = ({
         handleButtonClick(isClick)
     }
    return ((!isClick ?
-    <Button      
-        onClick= {handleClick}           
-        > <BeachAccessIcon className ='beach' sx={{ color: grey[900] }}/>
-   </Button>  
+    <button class="ui yellow button" onClick= {handleClick}>
+        <i class="sun icon"> </i>
+    </button>
+                  
+        
+   
    :
-   <Button 
-        onClick= {handleClick}             
-        > <ParkIcon className ='forest' sx={{ color: grey[900] }} />
-   </Button>  
+   <button class="ui teal button" onClick= {handleClick}>
+       <i class="tree icon"></i>
+   </button>
 )    
    );
 };

@@ -4,25 +4,26 @@ export default {
     "cards": [
         {
             "id":'1',
-            "title":"Tel",
+            "title":"Tel :",
             "content":"06.99.02.24.27",
         },
         {
             "id":'2',
-            "title":"Mail",
+            "title":"Mail :",
             "content":"romainperdriat@yahoo.fr",
         },
         {
             "id":'3',
-            "src":"LinkedIn.jpeg",
-            "title":"LinkedIn",
-            "content":"",
+            "src":"../../../public/LinkedIn.png",
+            "title":"LinkedIn :",
+            "alt":"logo LinkedIn Cliquable"
         },
         {
             "id":'4',
-            "src":"Github.jpeg",
-            "title":"Github",
-            "content":"",
-        }
+            "src":'../../../public/GitHub.png',
+            "title":"Github :",
+            "alt":"logo Github Cliquable"
+        },
+    
     ]
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import './buttonHeader.scss';
-import { Button } from '@mui/material';
-import { NavLink } from 'react-router-dom';
+
+
+
 
 const ButtonHeader = ({
     className,
@@ -12,10 +12,10 @@ const ButtonHeader = ({
     ...rest   
     }) => {
    return (
-    <Button 
-        variant="contained" color="success"> {name}
-        
-    </Button>  
+   
+   <button class="ui teal button">{name}</button>
+   
+         
    );
 };
 

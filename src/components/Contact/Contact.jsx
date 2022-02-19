@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './contact.scss';
 import datas from '../../Datas/datasCard';
-import Card from '../Card/Card';
+import Card from '../ContactCard/ContactCard';
 
 const Contact = ({className, ...rest}) => {
     const cards= datas.cards;
+    console.log(`Ensemble des cartes`,cards)
    return (
        
         <footer
@@ -21,6 +22,7 @@ const Contact = ({className, ...rest}) => {
                         src = {card.src}
                         title = {card.title}
                         content= {card.content}
+                        alt={card.alt}
                         />
                     ))
                 }          

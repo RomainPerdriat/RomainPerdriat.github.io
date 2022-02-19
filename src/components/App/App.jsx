@@ -10,7 +10,6 @@ import { Routes, Route} from 'react-router-dom';
 import datas from '../../Datas/datasBouton';
 import Contact from '../Contact/Contact';
 import {useState} from 'react';
-import classNames from 'classnames';
 function App() {
   const [appState,setAppState] = useState(false)
   const handleButtonClick = (appState) => {
@@ -19,37 +18,36 @@ function App() {
   }
   return (
     (!appState ? 
-    <div className="App">
-      <Header buttons = {datas} 
-        handleButtonClick={handleButtonClick}
-      />
-        <Routes>
-          <Route path ="/" element ={<Pres state= {appState}/>}/>
-          <Route path ="/ExpeTech" element ={<ExpeTech/>}/>
-          <Route path ="/VPComp" element ={<VPComp/>}/>
-          <Route path ="/Formations" element ={<Formations/>}/>        
-          <Route path ="/Loisirs" element ={<Loisirs/>}/>        
-          <Route path = "*" element ={<Error404/>}/>
-        </Routes>  
-        <Contact/>  
-    </div>
+      <div>
+        <div className="App">
+          <Header buttons = {datas}
+            handleButtonClick={handleButtonClick}
+          />
+            <Routes>
+              <Route path ="/" element ={<Pres state= {appState}/>}/>
+              <Route path ="/ExpeTech" element ={<ExpeTech/>}/>     
+              <Route path ="/Loisirs&pp" element ={<Loisirs/>}/>      
+              <Route path = "*" element ={<Error404/>}/>
+            </Routes>   
+        </div>
+        <Contact/>
+      </div>
     :
-    <div className="App2">
-      <Header buttons = {datas}
-        handleButtonClick={handleButtonClick}
-      />
-        <Routes>
-          <Route path ="/" element ={<Pres state= {appState}/>}/>
-          <Route path ="/ExpeTech" element ={<ExpeTech/>}/>
-          <Route path ="/VPComp" element ={<VPComp/>}/>
-          <Route path ="/Formations" element ={<Formations/>}/>        
-          <Route path ="/Loisirs" element ={<Loisirs/>}/>        
-          <Route path = "*" element ={<Error404/>}/>
-        </Routes>  
-        <Contact/>  
-    </div>
-    )
+      <div>
+        <div className="App2">
+          <Header buttons = {datas}
+            handleButtonClick={handleButtonClick}
+          />
+            <Routes>
+              <Route path ="/" element ={<Pres state= {appState}/>}/>
+              <Route path ="/ExpeTech" element ={<ExpeTech/>}/>     
+              <Route path ="/Loisirs&pp" element ={<Loisirs/>}/>        
+              <Route path = "*" element ={<Error404/>}/>
+            </Routes>   
+        </div>
+        <Contact/>
+      </div>
+    )    
   );
-}
-
+}  
 export default App;

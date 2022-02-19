@@ -6,13 +6,11 @@ import Contact from '../Contact/Contact';
 
 const Error404 = ({className, ...rest}) => {
    return (
-       <div>
-            <div
-                className={classnames('error404', className)}
-                {...rest}
-                >            
+      
+            <div>     
+                <img class="ui medium bordered image" className='error404' src="error404.jpg"></img>       
             </div>           
-        </div>
+      
    );
 };
 

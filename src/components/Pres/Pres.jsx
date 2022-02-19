@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './pres.scss';
 import { Avatar } from '@mui/material';
-import Contact from '../Contact/Contact';
+
+
 
 
 const Pres = ({className,
@@ -22,16 +23,17 @@ const Pres = ({className,
                 : <Avatar 
                 alt="ma photo de profil"
                 src="profil_cv.jpg"
-                sx={{ width: 200, height: 200 }} />) }
-                
- 
-            
+                sx={{ width: 200, height: 200 }} />) }             
             <p className = "pres-p">
                 Bonjour!
                 Je suis actuellement en formation Développeur FullStack chez O'clock.
-                On commence demain notre projet de fin de formation, c'est parti pour un mois de dèv en équipe.
+                L'équipe dont je fais partievient de commencer son  projet de fin de formation, c'est parti pour un mois de dèv en équipe.
+                Au programme? refaire en entier le site d'une association finistèrienne!
+            
                 A bientôt
-            </p>
+
+                Ps: Cette pâge est encore en cours de construction, les éléments manquants seront ajoutées sous peu. Bonne visite
+            </p>            
         </div>        
         
    );
