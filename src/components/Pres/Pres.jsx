@@ -15,7 +15,7 @@ const Pres = ({className,
        <div
             className={classnames('pres', className)}
             {...rest}
-         >        <h1>Présentation</h1>
+         >        
           {(state ? <Avatar 
                         alt="ma 2nde photo de profil"
                         src="profilplage.jpeg"                        
