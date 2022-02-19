@@ -24,15 +24,17 @@ const Pres = ({className,
                 alt="ma photo de profil"
                 src="profil_cv.jpg"
                 sx={{ width: 200, height: 200 }} />) }             
-            <p className = "pres-p">
-                Bonjour!
-                Je suis actuellement en formation Développeur FullStack chez O'clock.
-                L'équipe dont je fais partievient de commencer son  projet de fin de formation, c'est parti pour un mois de dèv en équipe.
-                Au programme? refaire en entier le site d'une association finistèrienne!
+            <p className ="p1" >
+                Bonjour!  </p>              
+                <p>Je suis actuellement en formation Développeur FullStack chez <strong>O'clock</strong>.</p>
+                <p>L'équipe dont je fais partie vient de commencer son  projet de fin de formation, c'est parti pour <strong>un mois de dèv en équipe</strong>.
+                Au programme? Refaire en entier le site d'une association finistèrienne!</p>
             
-                A bientôt
+                <p>A bientôt</p>
 
-                Ps: Cette pâge est encore en cours de construction, les éléments manquants seront ajoutées sous peu. Bonne visite
+                <p>Ps: Cette pâge est encore en cours de construction, les éléments manquants seront ajoutés sous peu.
+                Ce site utilise <strong>React</strong>, <strong>Material-UI</strong> et <strong>Sémantic-UI</strong></p>
+                <p> Bonne visite
             </p>            
         </div>        
         

@@ -17,7 +17,7 @@ const ProjetPerso = ({className, ...rest}) => {
             <Avatar 
                 alt="travaux en cours"
                 src="travaux.jpg"                        
-                sx={{ width: 200, height: 200 }}
+                sx={{ width: 125, height: 125 }}
              />                
         </div>
    );

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './contactCard.scss';
+import {Link} from 'react-router-dom'
 
 const Card = ({
     className,
@@ -10,6 +11,8 @@ const Card = ({
     title,
     content,
     alt,
+    link,
+    toShow,
      ...rest}) => {
    return (
         <div class="ui secondary  menu">
@@ -17,7 +20,7 @@ const Card = ({
                 <div> 
                     <p className= "contenu">
                         {content} 
-                        <img src ={src} alt={alt}/>      
+                        <Link to= "{link}">{toShow}</Link>      
                     </p>  
                 </div>
             </div>

@@ -14,7 +14,6 @@ const Contact = ({className, ...rest}) => {
                 className={classnames('contact', className)}
                 {...rest}
             >
-                <h1>Contact</h1>
                 {
                     cards.map((card) => (
                         <Card
@@ -23,6 +22,8 @@ const Contact = ({className, ...rest}) => {
                         title = {card.title}
                         content= {card.content}
                         alt={card.alt}
+                        link={card.link}
+                        toShow={card.toShow}
                         />
                     ))
                 }          

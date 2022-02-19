@@ -2,7 +2,7 @@
 
 .formations{
     background-color: rgba(243, 234, 229,0.8);
-    padding-top: vars.$gutter;
+    padding-top: 1rem;
     padding-bottom: vars.$gutter;
     display: flex;
     flex-direction: column;
@@ -10,4 +10,7 @@
     max-width: 30%;
     margin: auto;
     margin-top: 2rem;
+    font-family: 'IM Fell English SC', serif;
+    font-size:large;
+    border-radius:5%; 
 }
