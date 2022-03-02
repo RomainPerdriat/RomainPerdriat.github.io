@@ -21,7 +21,8 @@ const ButtonHeader = ({
 
 ButtonHeader.propTypes = {
     className: PropTypes.string,
-    name : PropTypes.string.isRequired
+    name : PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired
 };
 ButtonHeader.defaultProps = {
     className: '',

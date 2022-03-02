@@ -39,6 +39,13 @@ const ExpeTech = ({
 
 ExpeTech.propTypes = {
     className: PropTypes.string,
+    techs: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number.isRequired,
+          title: PropTypes.string.isRequired,
+          icons: PropTypes.string
+        }),
+      ),
 };
 ExpeTech.defaultProps = {
     className: '',

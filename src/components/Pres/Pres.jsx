@@ -28,7 +28,7 @@ const Pres = ({className,
                 Bonjour!  </p>              
                 <p>Je suis actuellement en formation Développeur FullStack chez <strong>O'clock</strong>.</p>
                 <p>L'équipe dont je fais partie vient de commencer son  projet de fin de formation, c'est parti pour <strong>un mois de dèv en équipe</strong>.
-                Au programme? Refaire en entier le site d'une association finistèrienne!</p>
+                Au programme? Refaire le site d'une association Finistèrienne!</p>
             
                 <p>A bientôt</p>
 

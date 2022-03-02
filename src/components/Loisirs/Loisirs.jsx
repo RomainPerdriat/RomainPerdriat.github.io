@@ -24,8 +24,6 @@ const Loisirs = ({className, ...rest}) => {
                      <li value="-">La musique (beaucoup de folk, entre autres)</li>
                      <li value="-">La Bande Dessinée</li>
                      <li value="-">Le jardinage</li>
-                     <li value="-">Rick et Morty</li> 
-                     <li value="-">The Office</li>
                      <li value="-">L'astronomie</li>                
                 </ol>              
         </div>

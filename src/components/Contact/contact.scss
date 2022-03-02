@@ -2,7 +2,28 @@
 
 .contact {
     background-color:rgba(243, 234, 229,0.8); 
-    padding: 0.5rem;
+    padding-left: 1rem;
+    padding: 1.2rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;    
+
+    &-container{
+        margin-right:2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items:flex-end;
+        
+
+    }
+    .ptext{
+        margin-top: 2rem;
+    }
+    .plogo {
+        margin-top: 1rem;;
+    }
+    p{
+        margin-right: 15rem;
+    }
 }

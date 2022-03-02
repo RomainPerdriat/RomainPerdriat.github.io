@@ -3,30 +3,31 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './contact.scss';
 import datas from '../../Datas/datasCard';
-import Card from '../ContactCard/ContactCard';
+import { Avatar } from '@mui/material';
+
 
 const Contact = ({className, ...rest}) => {
     const cards= datas.cards;
     console.log(`Ensemble des cartes`,cards)
    return (
        
-        <footer
-                className={classnames('contact', className)}
-                {...rest}
+        <footer className= "contact"   
             >
-                {
-                    cards.map((card) => (
-                        <Card
-                        key = {card.id}
-                        src = {card.src}
-                        title = {card.title}
-                        content= {card.content}
-                        alt={card.alt}
-                        link={card.link}
-                        toShow={card.toShow}
-                        />
-                    ))
-                }          
+             <h2 className= "contact-container"></h2>   
+                    <p className = "ptext">Télephone: 06.99.02.24.27</p>
+                    <p className = "ptext">Mail : romainperdriat@yahoo.fr</p>
+                    <p className = "plogo"> <a href = "https://www.linkedin.com/in/romainperdriat/"> <Avatar 
+                        alt="LinkedIn Logo"
+                        src="LinkedIn.png"                        
+                        sx={{ width: 40, height: 40 }} /> </a>
+                    </p>
+                    <p className = "plogo"> <a href = "https://github.com/RomainPerdriat"> <Avatar 
+                        alt="LinkedIn Logo"
+                        src="GitHub.png"                        
+                        sx={{ width: 40, height:40 }} />
+                        </a>
+                    </p>
+                     
             </footer>
        
    );

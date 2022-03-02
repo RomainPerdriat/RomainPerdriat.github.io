@@ -30,6 +30,7 @@ const Bouton_DM = ({
 
 Bouton_DM.propTypes = {
     className: PropTypes.string,
+    handleButtonClick: PropTypes.func
 };
 Bouton_DM.defaultProps = {
     className: '',
