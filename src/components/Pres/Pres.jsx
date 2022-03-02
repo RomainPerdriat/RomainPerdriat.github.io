@@ -32,7 +32,7 @@ const Pres = ({className,
             
                 <p>A bientôt</p>
 
-                <p>Ps: Cette pâge est encore en cours de construction, les éléments manquants seront ajoutés sous peu.
+                <p>Ps: Cette page est encore en cours de construction, les éléments manquants seront ajoutés sous peu.
                 Ce site utilise <strong>React</strong>, <strong>Material-UI</strong> et <strong>Sémantic-UI</strong></p>
                 <p> Bonne visite
             </p>            

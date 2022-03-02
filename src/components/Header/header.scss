@@ -5,8 +5,28 @@
     padding: 1.5rem;
     text-align: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     font-family: 'IM Fell English SC', serif;
+
+    &-button{
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+    
+        background-color: rgba(0,0,0,.4);
+        text-align: center;
+        padding: 1.5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'IM Fell English SC', serif;
+    }
+    
 }
 
 
