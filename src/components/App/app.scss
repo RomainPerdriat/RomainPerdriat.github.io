@@ -1,21 +1,68 @@
+@use '../../styles/vars';
 
-
-
-.App {
-  text-align: center;
-  height: 92vh;
-  width:auto;
-  background-image:url("../../../public/fpcv.jpeg");
-  padding: .5rem;
+@media screen and (min-width: 1024px) {
+  .App {
+    text-align: center;
+    height: 92vh;
+    width:auto;
+    background-image:url("../../../public/fpcv.jpeg");
+    padding: .5rem;
+  }
 }
 
-.App2 {
-  text-align: center;
-  height: 92vh;
-  width:auto;
-  background-image:url("../../../public/thaï.jpg");
-  background-size: cover;  
-  padding: .5rem;
-}
+@media screen and (min-width: 768px) and( max-width: 1023px) {
+  .App {
+    text-align: center;
+    height: 92vh;
+    width:auto;
+    background-image:url("../../../public/fpcv.jpeg");
+    padding: .5rem;
+  }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .App {
+      text-align: center;
+      height: 100%;
+      width:auto;
+      background-image:url("../../../public/fpcv.jpeg");
+      padding: .5rem;
+    } 
 
-
+    @media screen and (min-width: 1024px) {
+      .App2 {
+        text-align: center;
+        height: 92vh;
+        width:auto;
+        background-image:url("../../../public/thaï.jpg");
+        background-size: cover;  
+        padding: .5rem;
+      }
+    }
+    
+    @media screen and (min-width: 768px) and( max-width: 1023px) {
+      .App2 {
+        text-align: center;
+        height: 92vh;
+        width:auto;
+        background-image:url("../../../public/thaï.jpg");
+        background-size: cover;  
+        padding: .5rem;
+      }
+      }
+      
+      @media screen and (max-width: 767px) {
+        .App2 {
+          text-align: center;
+          height: 100%;
+          width:auto;
+          background-image:url("../../../public/thaï.jpg");
+          background-size: cover;  
+          padding: .5rem;
+        } 
+      }
+  }
+    
+  
+  
+  
