@@ -17,8 +17,8 @@ const Loisirs = ({className, ...rest}) => {
             <p>
             Je m'intèresse à beaucoup de choses! 
             </p>
-            <p>L'apprentissage permanent est vraiment important pour moi, et, de ce fait, le nombre de mes centres d'interêt fait comme mon âge, il croît.</p>
-            <p>En voici donc certains: </p>
+            <p>L'apprentissage permanent est vraiment important pour moi, et, de ce fait, le nombre de mes centres d'intérêt fait comme mon âge, il croît.</p>
+            <p>En voila certains: </p>
                 <ol class="ui list">               
                      <li value="-">La cuisine</li>
                      <li value="-">La musique </li>

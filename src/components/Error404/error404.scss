@@ -1,8 +1,40 @@
-.error404{     
-    
-    text-align: center;
-    margin-top:4em;
-    height: 50rem;   
-    padding: .5rem;
-  
+@media screen and (min-width: 1024px) {
+
+    .error404{     
+        background-color: rgb(255, 0, 0, 0.8);
+        text-align: center;
+        margin-top:1.7em;
+        height: 50rem;   
+        padding: .5rem; 
+    }
 }
+
+
+
+@media screen and (min-width: 768px) and( max-width: 1023px) {
+    .error404{     
+        
+        background-color: rgb(255, 0, 0, 0.8);
+        text-align: center;
+        margin-top:1.7em;
+        height: 50rem;   
+        padding: .5rem;
+        max-width: 60em; 
+        max-height: 60em;   
+    
+    }
+}
+  
+  @media screen and (max-width: 767px) {
+    .error404{            
+        background-color: rgb(255, 0, 0, 0.8);
+        text-align: center;
+        margin-top:1.7em;
+        height: 50rem;   
+        padding: .5rem;
+        max-width:20em ;
+        max-height: 20em;
+    
+    }
+  }
+  

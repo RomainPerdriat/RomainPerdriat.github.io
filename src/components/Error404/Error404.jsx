@@ -7,9 +7,9 @@ import Contact from '../Contact/Contact';
 const Error404 = ({className, ...rest}) => {
    return (
       
-            <div>     
-                <img class="ui medium bordered image" className='error404' src="error404.jpg"></img>       
-            </div>           
+                 
+                <img className="ui medium bordered image" className='error404' src="error404.jpg" alt  ="you should not pass!"></img>       
+                      
       
    );
 };

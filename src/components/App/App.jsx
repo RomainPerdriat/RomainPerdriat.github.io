@@ -1,9 +1,7 @@
 import ExpeTech from '../ExpeTech/ExpeTech';
-import Formations from '../Formations/Formations';
 import Header from '../Header/Header';
 import Loisirs from '../Loisirs/Loisirs';
 import Pres from '../Pres/Pres';
-import VPComp from '../VPComp/VPComp';
 import Error404 from '../Error404/Error404';
 import './app.scss';
 import { Routes, Route} from 'react-router-dom';
@@ -14,6 +12,7 @@ function App() {
   const [appState,setAppState] = useState(false)
   const handleButtonClick = (appState) => {
     setAppState(!appState)
+    console.log(appState)
     
   }
   return (

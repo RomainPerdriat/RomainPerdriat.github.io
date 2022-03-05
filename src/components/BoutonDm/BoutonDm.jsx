@@ -13,17 +13,15 @@ const Bouton_DM = ({
         setIsClick(!isClick)
         handleButtonClick(isClick)
     }
-   return ((!isClick ?
+   return ((!isClick
+   ?
     <button class="ui yellow button" onClick= {handleClick}>
         <i class="sun icon"> </i>
     </button>
-                  
-        
-   
    :
-   <button class="ui teal button" onClick= {handleClick}>
-       <i class="tree icon"></i>
-   </button>
+    <button class="ui teal button" onClick= {handleClick}>
+        <i class="tree icon"></i>
+    </button>
 )    
    );
 };
