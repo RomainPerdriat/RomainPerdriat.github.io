@@ -23,8 +23,8 @@ const Header = ({
             {...rest}
          >
          
-        <Box sx={{ boxShadow: 7 }}>
-            <ButtonDm  handleButtonClick = {handleButtonClick} >Darkmode</ButtonDm>
+        <Box  className={({ isActive }) => classnames('header-box', { 'header-box--active': isActive })} sx={{ boxShadow: 7 }}>
+            <ButtonDm   className={({ isActive }) => classnames('header-btn', { 'header-btn--active': isActive })} handleButtonClick = {handleButtonClick} >Darkmode</ButtonDm>
         </Box>
         {titleAndWayButtons.map((button) => (
             <NavLink

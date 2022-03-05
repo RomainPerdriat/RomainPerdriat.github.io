@@ -9,13 +9,27 @@
     justify-content: space-between;
     font-family: 'IM Fell English SC', serif;
 
+    &-box{
+        display: flex;
+        flex-direction: row
+    }
    
 }
 
+@media screen and (min-width: 768px) and( max-width: 1023px) {
+    .header{            
+        text-align: center;
+        padding: 1.5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: 'IM Fell English SC', serif;    
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .header{
-    
-        background-color: rgba(211, 8, 8); 
+    .header{   
         text-align: center;
         padding: 1.5rem;
         text-align: center;
@@ -23,8 +37,11 @@
         flex-direction: column;
         justify-content: space-between;
         font-family: 'IM Fell English SC', serif;
+        gap: 1rem;
     }
     
 }
+
+
 
 

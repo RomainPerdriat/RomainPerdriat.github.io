@@ -1,6 +1,6 @@
 @use '../../styles/vars';
 
-//@media screen and (max-width: 640px){
+
     .pres{    
         background-color: rgba(243, 234, 229,0.8);
         font-family: 'IM Fell English SC', serif;
@@ -11,31 +11,61 @@
         max-width: 50%;
         max-height: 100%;
         margin: auto;
-        margin-top: 6rem;
+        margin-top: 3.5rem;
         padding: 1rem ;
-        border-radius:5%;        
+        border-radius:5%;   
+        overflow: auto;     
     }
     .p1{
         padding-top:1rem;
     }
-//}
 
-/*
 
-@media screen and (min-width: 769px){
-    .pres{    
-        background-color: rgba(243, 234, 229,0.8);
-        font-family: 'IM Fell English SC', serif;
-        font-size:x-large;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 50%;
-        max-height: 100%;
-        margin: auto;
-        margin-top: 1.5rem;
-        padding: 1rem 
+    @media screen and (min-width: 768px) and( max-width: 1023px) {
+        
+        .pres{    
+            background-color: rgba(243, 234, 229,0.8);
+            font-family: 'IM Fell English SC', serif;
+            font-size:large;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 70%;
+            max-height: 70%;
+            margin: auto;
+            margin-top: 1rem;
+            padding: 1rem ;
+            border-radius:5%; 
+            
+            
+        }
+        .p1{
+            padding-top:1rem;
+        }
     }
-}*/
-
+    
+    @media screen and (max-width: 768px) {
+        .pres{    
+            background-color: rgba(243, 234, 229,0.8);
+            font-family: 'IM Fell English SC', serif;
+            font-size:large;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 70%;
+            max-height: 70%;
+            margin: auto;
+            margin-top: 1.5rem;
+            padding: 1rem ;
+            overflow: auto;
+            
+            
+        }
+        .p1{
+            padding-top:1rem;
+        }
+        
+    }
+    
 

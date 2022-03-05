@@ -13,7 +13,7 @@ const Contact = ({className, ...rest}) => {
        
         <footer className= "contact"   
             >
-             <h2 className= "contact-container"></h2>   
+             
                     <p className = "ptext">Télephone: 06.99.02.24.27</p>
                     <p className = "ptext">Mail : romainperdriat@yahoo.fr</p>
                     <p className = "plogo"> <a href = "https://www.linkedin.com/in/romainperdriat/"> <Avatar 

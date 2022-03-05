@@ -3,27 +3,64 @@
 .contact {
     background-color:rgba(243, 234, 229,0.8); 
     padding-left: 1rem;
-    padding: 0.2rem;
+    padding: 0.4rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;    
+    justify-content: space-evenly;
+    font-family: 'IM Fell English SC', serif;  
 
-    &-container{
-        margin-right:2rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items:flex-end;
-        
-
-    }
+   
     .ptext{
         margin-top: 2rem;
     }
     .plogo {
         margin-top: 1rem;;
     }
-    p{
-        margin-right: 15rem;
+    
+}
+
+@media screen and (min-width: 768px) and( max-width: 1023px) {
+    
+    .contact {
+    background-color:rgba(243, 234, 229,0.8); 
+    padding-left: 1rem;
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'IM Fell English SC', serif;          
+        
+        .ptext{
+            margin-top: 2.5rem;
+        }
+        .plogo {
+            margin-top: 2rem;
+            margin-bottom:1rem
+        }
+        
     }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        background-color:rgba(243, 234, 229,0.8); 
+        padding-left: 1rem;
+        padding: 0.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'IM Fell English SC', serif;          
+            
+            .ptext{
+                margin-top: 2.5rem;
+            }
+            .plogo {
+                margin-top: 2rem;
+                margin-bottom:1rem
+            }
+            
+        }
+    
 }
