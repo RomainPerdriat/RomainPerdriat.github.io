@@ -5,7 +5,7 @@ export default {
         {
             "id":'1',            
             "title":'Développeur Web Et Web Mobile',
-            "content":` De Septembre 2021 à Mars 2022`
+            "content":`  Septembre 2021 à Mars 2022`
         },
         {
             "id":'2',
@@ -17,11 +17,7 @@ export default {
             "title":'DUT Techniques de Commercialisation'  , 
             "content":` 2009` 
         },
-        {
-            "id":'4',
-            "title":'bac L',  
-            "content":' 2007'          
-        },
+        
        
        
     ]

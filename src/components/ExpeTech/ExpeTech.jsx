@@ -20,15 +20,17 @@ const ExpeTech = ({
                 {...rest}
             >
                 <h1> Technologies </h1>
-                {
-                    techs.map((tech) => (
-                        <TechCard
-                        key = {tech.id}
-                        title = {tech.title}
-                        icons = {tech.icons}
-                        />
-                    ))
-                } 
+                <div  className={classnames('expeTech-list', className)}>
+                    {
+                        techs.map((tech) => (
+                            <TechCard
+                            key = {tech.id}
+                            title = {tech.title}
+                            icons = {tech.icons}
+                            />
+                        ))
+                    } 
+                </div>
             </div>   
                 <Experiences/>
                 <Formations/>

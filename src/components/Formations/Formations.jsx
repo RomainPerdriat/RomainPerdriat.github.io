@@ -15,7 +15,7 @@ const Formations = ({className, ...rest}) => {
             className={classnames('formations', className)}
             {...rest}
          >
-            <h1>Formations</h1>
+            <h2>Formations</h2>
             {
                     formations.map((formation) => (
                         <FormationsCard

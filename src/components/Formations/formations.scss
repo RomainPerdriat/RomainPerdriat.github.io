@@ -1,16 +1,57 @@
 @use '../../styles/vars';
 
-.formations{
-    background-color: rgba(243, 234, 229,0.8);
-    padding-top: 1rem;
-    padding-bottom: vars.$gutter;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 30%;
-    margin: auto;
-    margin-top: 2rem;
-    font-family: 'IM Fell English SC', serif;
-    font-size:large;
-    border-radius:5%; 
+@media screen and (min-width: 1024px) {
+    .formations{
+        background-color: rgba(243, 234, 229,0.8);
+        padding-top: 1rem;
+        padding-bottom: vars.$gutter;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 30%;
+        margin: auto;
+        margin-top: 2rem;
+        font-family: 'IM Fell English SC', serif;
+        font-size:large;
+        border-radius:5%; 
+    }
 }
+
+@media screen and (min-width: 768px) and( max-width: 1023px) {
+    .formations{
+        background-color: rgba(90, 38, 11, );
+        padding-top: 1rem;
+        padding-bottom: vars.$gutter;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 50%;
+        max-height: 20%;
+        margin: auto;
+        margin-top: 2rem;
+        font-family: 'IM Fell English SC', serif;
+        font-size:large;
+        border-radius:5%; 
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .formations{
+        background-color: rgba(144, 20, 167, );
+        padding-top: 1rem;
+        padding-bottom: vars.$gutter;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 60%;
+        max-height: 20%;
+        margin: auto;
+        margin-top: 1rem;
+        font-family: 'IM Fell English SC', serif;
+        font-size:large;
+        border-radius:5%; 
+    }
+    h2{
+        font-size:4rem
+      }
+  }

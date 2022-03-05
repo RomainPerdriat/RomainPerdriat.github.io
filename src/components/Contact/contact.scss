@@ -45,20 +45,20 @@
 @media screen and (max-width: 768px) {
     .contact {
         background-color:rgba(243, 234, 229,0.8); 
-        padding-left: 1rem;
-        padding: 0.4rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-evenly;
         align-items: center;
-        font-family: 'IM Fell English SC', serif;          
+        font-family: 'IM Fell English SC', serif; 
+        max-width: 100%;
+        max-height: 10%;         
             
             .ptext{
-                margin-top: 2.5rem;
+                margin-top: 0.5rem;
             }
             .plogo {
-                margin-top: 2rem;
-                margin-bottom:1rem
+                margin-top: 0.5rem;
+                margin-bottom:0.2rem
             }
             
         }

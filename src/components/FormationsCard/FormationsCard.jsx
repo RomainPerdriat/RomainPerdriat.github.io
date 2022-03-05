@@ -13,7 +13,8 @@ const FormationsCard = ({
             className={classnames('formationscard', className)}
             {...rest}
          >
-            <p>{title}{content}</p>
+            <strong>{title}</strong>
+            <p>{content}</p>
         </div>
    );
 };
