@@ -34,7 +34,7 @@ const Pres = ({className,
 
                 <p>Ps: Cette page est encore en cours de construction, les éléments manquants seront ajoutés sous peu.
                 Ce site utilise <strong>React</strong>, <strong>Material-UI</strong> et <strong>Sémantic-UI</strong></p>
-                <p>N'oubliez pas de tester la 404!</p>
+                {/* <p>N'oubliez pas de tester la 404!</p> */}
                 <p> Bonne visite
             </p>            
         </div>        
