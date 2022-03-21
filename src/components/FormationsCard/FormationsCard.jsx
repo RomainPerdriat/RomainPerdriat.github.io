@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './formationsCard.scss';
+import { Typography } from '@mui/material';
 
 const FormationsCard = ({
     className,
@@ -14,7 +15,7 @@ const FormationsCard = ({
             {...rest}
          >
             <strong>{title}</strong>
-            <p>{content}</p>
+            <Typography sx= {{fontSize :'16px'}}>{content}</Typography>
         </div>
    );
 };
