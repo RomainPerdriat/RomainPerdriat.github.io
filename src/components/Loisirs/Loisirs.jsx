@@ -21,10 +21,10 @@ import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 
 const Loisirs = ({className, ...rest}) => {
 
-   const [kitchen, setKitchenOpen] = React.useState(true);
-   const [music, setMusicOpen] = React.useState(true);
-   const [bd, setBdOpen] = React.useState(true);
-   const [garden, setGardenOpen] = React.useState(true);
+   const [kitchen, setKitchenOpen] = React.useState(false);
+   const [music, setMusicOpen] = React.useState(false);
+   const [bd, setBdOpen] = React.useState(false);
+   const [garden, setGardenOpen] = React.useState(false);
 
    const handleKitchenClick = () => {
     setKitchenOpen(!kitchen);
@@ -57,7 +57,7 @@ const Loisirs = ({className, ...rest}) => {
             <List sx ={{ fontSize: '16px'}}>       
                   <ListItemButton onClick={handleKitchenClick}>
                      <ListItemIcon>
-                        <SoupKitchenIcon />
+                        <SoupKitchenIcon fontSize="large" />
                      </ListItemIcon>   
                      <ListItemText primaryTypographyProps={{fontSize: '16px'}} primary="La Cuisine" />
                      {kitchen ? <ExpandLess /> : <ExpandMore />}
@@ -65,14 +65,14 @@ const Loisirs = ({className, ...rest}) => {
                   <Collapse in={kitchen} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
                            <ListItemButton >
-                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>J'adore la cuisine Thaï et de façon générale la cuisine épicée. Mais je m'amuse (presque) tout autant à faire de la cuisine traditionnelle</ListItemText> 
+                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>J'adore la cuisine Thaï et de façon générale la cuisine épicée. Mais je m'amuse (presque) tout autant à faire de la cuisine traditionnelle.</ListItemText> 
                            </ListItemButton>
                         </List>
                   </Collapse>
                
                   <ListItemButton onClick={handleMusicClick}>
                      <ListItemIcon>
-                        <MusicNoteIcon />
+                        <MusicNoteIcon fontSize="large"/>
                      </ListItemIcon>   
                      <ListItemText primaryTypographyProps={{fontSize: '16px'}} primary="La Musique" />
                      {music ? <ExpandLess /> : <ExpandMore />}
@@ -80,14 +80,14 @@ const Loisirs = ({className, ...rest}) => {
                   <Collapse in={music} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
                            <ListItemButton >
-                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>Je joue de la guitare en tant qu'amateur et j'adore découvrir de nouvelles musiques. J'écoute de tout même si j'ai une préférence pour tout ce qui est flok/accoustic (John Butler, Xavier Rudd,...)</ListItemText> 
+                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>Je joue de la guitare en tant qu'amateur et j'adore découvrir de nouvelles musiques. J'écoute de tout même si j'ai une préférence pour tout ce qui est flok/accoustic (John Butler, Xavier Rudd,...).</ListItemText> 
                            </ListItemButton>
                         </List>
                   </Collapse>
                
                   <ListItemButton onClick={handleBdClick}>
                         <ListItemIcon>
-                           <LibraryBooksIcon />
+                           <LibraryBooksIcon fontSize="large"/>
                         </ListItemIcon>   
                         <ListItemText primaryTypographyProps={{fontSize: '16px'}} primary="La Bande Dessinée" />
                         {bd? <ExpandLess /> : <ExpandMore />}
@@ -102,7 +102,7 @@ const Loisirs = ({className, ...rest}) => {
                  
                   <ListItemButton onClick={handleGardenClick}>
                      <ListItemIcon>
-                        <LocalFloristIcon />
+                        <LocalFloristIcon fontSize="large" />
                      </ListItemIcon>   
                      <ListItemText primary="Le Jardinage" primaryTypographyProps={{fontSize: '16px'}} />
                      {garden ? <ExpandLess /> : <ExpandMore />}
@@ -110,13 +110,12 @@ const Loisirs = ({className, ...rest}) => {
                   <Collapse in={garden} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
                            <ListItemButton >
-                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>A la maison je m'occupe du potager et également d'un petit coin plus décoratif avec des plants d'ornements</ListItemText> 
+                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>A la maison je m'occupe du potager et également d'un petit coin plus décoratif avec des plants d'ornements.</ListItemText> 
                            </ListItemButton>
                         </List>
                   </Collapse>  
                </List>                
-        </div>
-        <ProjetPerso/>       
+        </div>      
 </div>
    );
 };

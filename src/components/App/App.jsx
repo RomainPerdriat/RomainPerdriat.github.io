@@ -8,6 +8,7 @@ import { Routes, Route} from 'react-router-dom';
 import datas from '../../Datas/datasBouton';
 import Contact from '../Contact/Contact';
 import {useState} from 'react';
+import ProjetPerso from '../ProjetPerso/ProjetPerso';
 function App() {
   const [appState,setAppState] = useState(false)
   const handleButtonClick = (appState) => {
@@ -25,7 +26,8 @@ function App() {
             <Routes>
               <Route path ="/" element ={<Pres state= {appState}/>}/>
               <Route path ="/ExpeTech" element ={<ExpeTech/>}/>     
-              <Route path ="/Loisirs&pp" element ={<Loisirs/>}/>      
+              <Route path ="/Loisirs" element ={<Loisirs/>}/>
+              <Route path ="/pp" element = {<ProjetPerso/>}/>
               <Route path = "*" element ={<Error404/>}/>
             </Routes>   
         </div>

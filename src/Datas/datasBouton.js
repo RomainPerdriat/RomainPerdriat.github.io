@@ -16,8 +16,13 @@ export default {
         },           
         {
             "id":'3',
-            "to":"/Loisirs&pp",
-            "title":'Loisirs et Projets Perso',
-        },       
+            "to":"/Loisirs",
+            "title":'Loisirs ',
+        },    
+        {
+            "id":'4',
+            "to":"/pp",
+            "title":'Projets Perso',
+        },     
     ]
 }
