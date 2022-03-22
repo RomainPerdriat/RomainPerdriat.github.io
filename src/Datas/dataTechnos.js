@@ -19,7 +19,7 @@ export default {
         },
         {
             "id":'4',
-            "title":"PostreSql",
+            "title":"PostgreSql",
             "icons":"",
         },
         {

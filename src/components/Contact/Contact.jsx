@@ -15,8 +15,8 @@ const Contact = ({className, ...rest}) => {
         <footer className= "contact"   
             >
              
-                    <Typography sx ={{fontSize:'16px', pt:'1.8em', pb : '2em'}}> Télephone: 06.99.02.24.27</Typography>
-                    <Typography sx ={{fontSize:'16px' ,pt:'1.8em', pb : '2em'}}> Mail : romainperdriat@yahoo.fr</Typography>
+                    <Typography sx ={{fontSize:'16px', pt:'1.8em', pb : '2em'}}> Téléphone: 06.99.02.24.27</Typography>
+                    <Typography sx ={{fontSize:'16px' ,pt:'1.8em', pb : '2em'}}> Email : romainperdriat@yahoo.fr</Typography>
                     <Typography sx ={{pt:'1em', pb : '2em'}}>  <a href = "https://www.linkedin.com/in/romainperdriat/"> <Avatar 
                         alt="LinkedIn Logo"
                         src="LinkedIn.png"                        

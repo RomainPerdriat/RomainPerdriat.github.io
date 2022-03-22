@@ -3,8 +3,43 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './loisirs.scss';
 import ProjetPerso from '../ProjetPerso/ProjetPerso';
+import { Typography } from '@mui/material';
+import ListSubheader from '@mui/material/ListSubheader';
+import List from '@mui/material/List';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Collapse from '@mui/material/Collapse';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import ExpandLess from '@mui/icons-material/ExpandLess';
+import ExpandMore from '@mui/icons-material/ExpandMore';
+import SoupKitchenIcon from '@mui/icons-material/SoupKitchen';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
+
 
 const Loisirs = ({className, ...rest}) => {
+
+   const [kitchen, setKitchenOpen] = React.useState(true);
+   const [music, setMusicOpen] = React.useState(true);
+   const [bd, setBdOpen] = React.useState(true);
+   const [garden, setGardenOpen] = React.useState(true);
+
+   const handleKitchenClick = () => {
+    setKitchenOpen(!kitchen);
+   };
+   const handleMusicClick = () => {
+      setMusicOpen(!music);
+   };
+   const handleBdClick = () => {
+      setBdOpen(!bd);
+   };
+   const handleGardenClick = () => {
+      setGardenOpen(!garden);
+   };
+   
+ 
    return (
     
     <div>
@@ -12,20 +47,74 @@ const Loisirs = ({className, ...rest}) => {
             className={classnames('loisirs', className)}
             {...rest}
          >
-
          <h1>Loisirs</h1>
-            <p>
+            <Typography sx ={{ fontSize: '16px'}}>
             Je m'intèresse à beaucoup de choses! 
-            </p>
-            <p>L'apprentissage permanent est vraiment important pour moi, et, de ce fait, le nombre de mes centres d'intérêt fait comme mon âge, il croît.</p>
-            <p>En voila certains: </p>
-                <ol class="ui list">               
-                     <li value="-">La cuisine</li>
-                     <li value="-">La musique </li>
-                     <li value="-">La Bande Dessinée</li>
-                     <li value="-">Le jardinage</li>
-                     <li value="-">L'astronomie</li>                
-                </ol>              
+            </Typography>
+            <Typography sx ={{ fontSize: '16px'}}>L'apprentissage permanent est vraiment important pour moi, et, de ce fait, le nombre de mes centres d'intérêt fait comme mon âge, il croît.</Typography>
+            <Typography sx ={{ fontSize: '16px'}}>En voila certains: </Typography>
+
+            <List sx ={{ fontSize: '16px'}}>       
+                  <ListItemButton onClick={handleKitchenClick}>
+                     <ListItemIcon>
+                        <SoupKitchenIcon />
+                     </ListItemIcon>   
+                     <ListItemText primaryTypographyProps={{fontSize: '16px'}} primary="La Cuisine" />
+                     {kitchen ? <ExpandLess /> : <ExpandMore />}
+                  </ListItemButton>
+                  <Collapse in={kitchen} timeout="auto" unmountOnExit>
+                        <List component="div" disablePadding>
+                           <ListItemButton >
+                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>J'adore la cuisine Thaï et de façon générale la cuisine épicée. Mais je m'amuse (presque) tout autant à faire de la cuisine traditionnelle</ListItemText> 
+                           </ListItemButton>
+                        </List>
+                  </Collapse>
+               
+                  <ListItemButton onClick={handleMusicClick}>
+                     <ListItemIcon>
+                        <MusicNoteIcon />
+                     </ListItemIcon>   
+                     <ListItemText primaryTypographyProps={{fontSize: '16px'}} primary="La Musique" />
+                     {music ? <ExpandLess /> : <ExpandMore />}
+                  </ListItemButton>
+                  <Collapse in={music} timeout="auto" unmountOnExit>
+                        <List component="div" disablePadding>
+                           <ListItemButton >
+                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>Je joue de la guitare en tant qu'amateur et j'adore découvrir de nouvelles musiques. J'écoute de tout même si j'ai une préférence pour tout ce qui est flok/accoustic (John Butler, Xavier Rudd,...)</ListItemText> 
+                           </ListItemButton>
+                        </List>
+                  </Collapse>
+               
+                  <ListItemButton onClick={handleBdClick}>
+                        <ListItemIcon>
+                           <LibraryBooksIcon />
+                        </ListItemIcon>   
+                        <ListItemText primaryTypographyProps={{fontSize: '16px'}} primary="La Bande Dessinée" />
+                        {bd? <ExpandLess /> : <ExpandMore />}
+                     </ListItemButton>
+                  <Collapse in={bd} timeout="auto" unmountOnExit>
+                        <List component="div" disablePadding>
+                           <ListItemButton >
+                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>Je lis avec autant de plaisir des BD comme BlackSad que des comics (Un long Halloween notamment). J'ai récemment découvert Mathieu Babblet dans le monde de la SF.</ListItemText> 
+                           </ListItemButton>
+                        </List>
+                  </Collapse>
+                 
+                  <ListItemButton onClick={handleGardenClick}>
+                     <ListItemIcon>
+                        <LocalFloristIcon />
+                     </ListItemIcon>   
+                     <ListItemText primary="Le Jardinage" primaryTypographyProps={{fontSize: '16px'}} />
+                     {garden ? <ExpandLess /> : <ExpandMore />}
+                  </ListItemButton>
+                  <Collapse in={garden} timeout="auto" unmountOnExit>
+                        <List component="div" disablePadding>
+                           <ListItemButton >
+                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>A la maison je m'occupe du potager et également d'un petit coin plus décoratif avec des plants d'ornements</ListItemText> 
+                           </ListItemButton>
+                        </List>
+                  </Collapse>  
+               </List>                
         </div>
         <ProjetPerso/>       
 </div>

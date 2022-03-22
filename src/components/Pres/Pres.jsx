@@ -28,8 +28,8 @@ const Pres = ({className,
                 sx={{ width: 200, height: 200 }} />) }             
             <Typography sx ={{fontSize:'20px', mb:'1em'}} className ="p1" >
                 Bonjour!  </Typography>              
-               <Typography sx ={{fontSize:'20px'}}>Je m'appelle Romain et j'ai terminé ma formation de développeur FullStack chez O'clock le 18 Mars dernier \0/.</Typography>
-               <Typography sx ={{fontSize:'20px', mt: '1em', mb: '.5em'}} >Lors du dernier mois j'ai participé au sein d'une équipe de 5 développeurs en formations à un projet de fin d'étude ambitieux: la refonte complète du site d'une association Finistérienne.
+               <Typography sx ={{fontSize:'20px'}}>Je m'appelle Romain et j'ai terminé ma formation de développeur FullStack chez O'clock le 18 Mars 2022 \0/.</Typography>
+               <Typography sx ={{fontSize:'20px', mt: '1em', mb: '.5em'}} >Lors du dernier mois de formation j'ai participé au sein d'une équipe de 5 développeurs en formations à un projet de fin d'étude ambitieux: la refonte complète du site d'une association Finistérienne.
                Vous pouvez voir ci dessous la présentation de la MVP du site :  </Typography>
                <Typography >  <a href = "https://youtu.be/0TCe_tGBYFs?t=4201"> <Avatar
                         alt="YouTubeLogo"
@@ -41,7 +41,7 @@ const Pres = ({className,
 
                <Typography sx ={{fontSize:'20px' , mt: '.5em'}}>Actuellement je suis à la recherche d'un stage d'une durée minimum de deux mois dès le mois de Mai. 
                 Pour le moment, je prépare mon passage de Titre Professionnel qui aura lieu à la fin du mois
-                d'Avril et viendra clôturer au niveau "scolaire" mon parcours de reconversion.</Typography>
+                d'Avril et viendra clôturer le programme scolaire de ma reconversion.</Typography>
 
                 
                 <Typography sx ={{fontSize:'20px' , mt: '1em'}} >
