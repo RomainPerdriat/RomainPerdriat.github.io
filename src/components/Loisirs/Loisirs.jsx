@@ -80,7 +80,7 @@ const Loisirs = ({className, ...rest}) => {
                   <Collapse in={music} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
                            <ListItemButton >
-                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>Je joue de la guitare en tant qu'amateur et j'adore découvrir de nouvelles musiques. J'écoute de tout même si j'ai une préférence pour tout ce qui est flok/accoustic (John Butler, Xavier Rudd,...).</ListItemText> 
+                              <ListItemText primaryTypographyProps={{fontSize: '16px'}}>Je joue de la guitare en tant qu'amateur et j'adore découvrir de nouvelles musiques. J'écoute de tout même si j'ai une préférence pour tout ce qui est folk/accoustic (John Butler, Xavier Rudd,...).</ListItemText> 
                            </ListItemButton>
                         </List>
                   </Collapse>
