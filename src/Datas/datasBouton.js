@@ -19,10 +19,10 @@ export default {
             "to":"/Loisirs",
             "title":'Loisirs ',
         },    
-        {
-            "id":'4',
-            "to":"/pp",
-            "title":'Projets Perso',
-        },     
+        // {
+        //     "id":'4',
+        //     "to":"/pp",
+        //     "title":'Projets Perso',
+        // },     
     ]
 }

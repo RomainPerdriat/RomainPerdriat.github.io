@@ -28,7 +28,7 @@ function App() {
               <Route path ="/ExpeTech" element ={<ExpeTech/>}/>     
               <Route path ="/Loisirs" element ={<Loisirs/>}/>
               <Route path ="/pp" element = {<ProjetPerso/>}/>
-              <Route path = "*" element ={<Error404/>}/>
+              <Route path = "*" element ={<Pres state= {appState}/>}/>
             </Routes>   
         </div>
         <Contact/>

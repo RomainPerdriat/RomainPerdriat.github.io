@@ -15,7 +15,7 @@ const Formations = ({className, ...rest}) => {
             className={classnames('formations', className)}
             {...rest}
          >
-            <h2>Formations</h2>
+            <h2>Formations et diplômes</h2>
             {
                     formations.map((formation) => (
                         <FormationsCard

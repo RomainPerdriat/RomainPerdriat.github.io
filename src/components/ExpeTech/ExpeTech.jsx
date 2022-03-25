@@ -6,6 +6,8 @@ import TechCard from '../TechCard/TechCard';
 import datasTech from '../../Datas/dataTechnos';
 import Formations from '../Formations/Formations';
 import Experiences from '../Experiences/Experiences';
+import Sqlicon from '../Sqlicon/Sqlicon';
+import { Box } from '@mui/material';
 
 const ExpeTech = ({
     className,
@@ -15,11 +17,13 @@ const ExpeTech = ({
         console.log(techs)
    return (
        <div>
+       
             <div
                 className={classnames('expeTech', className)}
                 {...rest}
             >
-                <h1> Technologies </h1>
+            
+                <h2> Technologies </h2>
                 <div  className={classnames('expeTech-list', className)}>
                     {
                         techs.map((tech) => (
@@ -31,9 +35,14 @@ const ExpeTech = ({
                         ))
                     } 
                 </div>
+                <Sqlicon/>
             </div>   
+            <Box className ="expefor">
                 <Experiences/>
                 <Formations/>
+                
+            </Box>
+                
         </div>
 
    );

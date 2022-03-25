@@ -14,8 +14,8 @@ const FormationsCard = ({
             className={classnames('formationscard', className)}
             {...rest}
          >
-            <strong>{title}</strong>
-            <Typography sx= {{fontSize :'14px'}}>{content}</Typography>
+            <Typography sx= {{fontSize :'17px', mt: .5}}>{title}</Typography>
+            <Typography sx= {{fontSize :'15px'}}>{content}</Typography>
         </div>
    );
 };
