@@ -42,7 +42,7 @@ function App() {
             <Routes>
               <Route path ="/" element ={<Pres state= {appState}/>}/>
               <Route path ="/ExpeTech" element ={<ExpeTech/>}/>     
-              <Route path ="/Loisirs&pp" element ={<Loisirs/>}/>        
+              <Route path ="/Loisirs" element ={<Loisirs/>}/>        
               <Route path = "*" element ={<Error404/>}/>
             </Routes>   
         </div>

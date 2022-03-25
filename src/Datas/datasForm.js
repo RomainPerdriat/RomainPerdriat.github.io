@@ -22,7 +22,7 @@ export default {
         },
         {
             "id":'4',            
-            "title":'Bac Litéraire'  , 
+            "title":'Bac Littéraire'  , 
             "content":` 2007` ,
             "city": `Tonnerre `
         },
