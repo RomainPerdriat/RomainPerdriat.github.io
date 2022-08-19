@@ -37,13 +37,9 @@ const Pres = ({className,
                         sx={{ width: 70, height:70 }} />
                         </a>
                     </Typography>
-
-
-               <Typography sx ={{fontSize:'20px' , mt: '.5em'}}>Actuellement je suis à la recherche d'un stage d'une durée minimum de deux mois dès le mois de Mai. 
-                En parallèle, je prépare mon passage de Titre Professionnel pour la fin du mois
-                d'Avril.</Typography>
-
-                
+               <Typography sx ={{fontSize:'20px' , mt: '.5em'}}>Après l'obtention de mon Titre Professionnel et un stage chez BeAble je suis 
+               à la recherche d'un poste stable.Je souhaite m'impliquer au sein d'une équipe qui communique afin de faire evoluer mes compétences actuelles
+               </Typography>
                 <Typography sx ={{fontSize:'20px' , mt: '1em'}} >
                 Ce site utilise <strong>React</strong> et <strong>Material-UI</strong> 
                 </Typography>
@@ -51,7 +47,6 @@ const Pres = ({className,
                 <Typography sx ={{fontSize:'20px' , mt: '1em'}}> Bonne visite
             </Typography>            
         </Box>        
-        
    );
 };
 
